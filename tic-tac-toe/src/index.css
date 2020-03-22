@@ -1,0 +1,25 @@
+:root {
+    --buttonWidth: 100px;
+    --buttonNumber: 3;
+}
+
+body {
+    background-color: silver;
+}
+
+#root {
+    text-align: center;
+}
+
+.board {
+    background-color: rgba(125, 125, 125, 0.9);
+    margin: 50px auto;
+    width: calc(var(--buttonWidth) * var(--buttonNumber) + 15px);
+    height: calc(var(--buttonWidth) * var(--buttonNumber) + 15px);
+}
+
+button {
+    width: var(--buttonWidth);
+    height: var(--buttonWidth);
+    font-size: 36px;
+}
