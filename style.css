@@ -1,13 +1,20 @@
-
 body {
     background-color: rgb(185, 193, 236);
+}
+
+#page {
+    display: grid;
+    text-align: center;
+    width: 98vw;
+    height: 98vh;
+    grid-template-areas: "main" "foot";
+    grid-template-rows: 1fr 30px;
 }
 
 #main {
     color: rgb(50, 50, 100);
     margin: 0 10vw 0 10vw;
-    text-align: center;
-    height: 100vh;
+    grid-area: main;
 }
 
 img {
@@ -28,5 +35,5 @@ ul {
 }
 
 #link {
-    margin: 20px auto 0 auto;
+    grid-area: foot;
 }
